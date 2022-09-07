@@ -1,6 +1,5 @@
-### compile with
-```
+compile with:
 g++ -o main main.cpp
-```
 
-##### we will convert this to a python class
+
+we will convert this to a python class

@@ -56,7 +56,7 @@ class Taxi {
             return this->licensePlate;
         }
 
-        bool isTaxiReadToDrive(){
+        bool isTaxiReadyToDrive(){
             return this->inspected;
         }
 

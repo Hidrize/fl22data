@@ -7,9 +7,9 @@ int main() {
         std::cout << "\n Medallion: " << t1.getMedallion();
         std::cout << "\n Plate: " << t1.getLicensePlate();
         std::cout << t1;
-        t1.isTaxiReadToDrive();
+        t1.isTaxiReadyToDrive();
         t1.Inspect();
-        t1.isTaxiReadToDrive();
+        t1.isTaxiReadyToDrive();
         std::cout << t1;
 
         Taxi t2 = Taxi();

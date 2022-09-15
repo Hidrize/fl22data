@@ -1,0 +1,5 @@
+compile with:
+g++ -o main main.cpp
+
+Convert c++ class to python class.
+Remember to test your code.

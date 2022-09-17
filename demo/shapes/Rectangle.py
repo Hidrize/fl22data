@@ -74,12 +74,12 @@ print('x:', r.get_x()) # check get_x() method
 print('y:', r.get_y()) # check get_y() method
 r.set_x(10)            # check set_x() method
 r.set_y(3)             # check set_y() method
-print(r)               # this akes use of our __repr__() definition
+print(r)               # this makes use of our __repr__() definition
 
 # test area and perimeter methods
 print('Area:', r.area())
 print('Perimeter:', r.perimeter())
 
 r2 = Rectangle(5,10)   # instantiate a new obj from our class, uses __init__() constructor, uses x=5, y=10
-print(r2)              # this akes use of our __repr__() definition
+print(r2)              # this makes use of our __repr__() definition
 

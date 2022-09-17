@@ -42,7 +42,6 @@ class Rectangle:
         
         out = out + plus + middle_dash * self.x + plus + '\n'
         return out;
-        
     
     def get_x(self):
         """Return x."""

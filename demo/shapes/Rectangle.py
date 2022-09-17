@@ -69,7 +69,7 @@ class Rectangle:
         return 2 * (self.x + self.y)
 
 
-r = Rectangle()        # instantiate obj from our class, uses __init__() construtor, uses default arguments x=1, y=1
+r = Rectangle()        # instantiate obj from our class, uses __init__() constructor, uses default arguments x=1, y=1
 print(r)               # this makes use of our __repr__() definition 
 print('x:', r.get_x()) # check get_x() method
 print('y:', r.get_y()) # check get_y() method

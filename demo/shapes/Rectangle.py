@@ -25,8 +25,7 @@ class Rectangle:
         """Define string representation for obj
 
         When we use print(obj) it will print the
-        out string from this method.
-        """
+        out string from this method."""
         middle_dash = '---'
         plus = '+'
         pipe = '┆'

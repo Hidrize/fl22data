@@ -18,12 +18,12 @@ that includes all of the following following methods:
     
     
     Your finished implementation of the Nums class will allow you to convert:
-        from decimal to binary
-        from decimal to octal
-        from decimal to hexadecimal
         from binary to decimal
         from octal to decimal
         from hexadecimal to decimal
+        from decimal to binary
+        from decimal to octal
+        from decimal to hexadecimal
 
     Suggested order for implementation:
         implement and test all of the getters (very easy)

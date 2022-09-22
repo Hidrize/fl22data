@@ -1,17 +1,21 @@
-See starter code in cs260_fl22_a1.py
+cs260-fl22-a1 programming assignment
 
-[ cs260-fl22-a1 programming assignment ]
+[ To do ]
+See the starter code: 
+https://github.com/bfilin/fl22data/blob/main/programming/a1/cs260_fl22_a1.py
+
 In this assignment you will finish the implementation of the Python Nums class 
-that include all of the following following methods:
-    __repr__()
-    repeated_division()
-    weighted_sum()
-    number_converter()
+that includes all of the following following methods:
     get_number()
     get_number_base()
     get_new_base()
     set_number()
     set_new_base()
+    weighted_sum()    
+    repeated_division()
+    number_converter()
+    __repr__()  
+    
     
     This class will allow you to convert to/from:
         decimal/binary, decimal/octal and decimal/hexadecimal
@@ -86,4 +90,9 @@ The constructor takes three arguments of string data type:
         from octal to decimal
         from hexadecimal to decimal
 
+
+[ Submit ]
+    Due on Sep 29th, end of the day.
+    You can use our cs260-fl22 Repl.it teams for education, look for project named cs260-A1 on repl.it
+    Place your finished python code in your CS260 GitHub repository, preferably under Programming/CS260-A1 sub directory structure
 

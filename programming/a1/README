@@ -17,8 +17,13 @@ that includes all of the following following methods:
     __repr__()  
     
     
-    The finished Nums class will allow you to convert to/from:
-        decimal/binary, decimal/octal and decimal/hexadecimal
+    Your finished implementation of the Nums class will allow you to convert:
+        from decimal to binary
+        from decimal to octal
+        from decimal to hexadecimal
+        from binary to decimal
+        from octal to decimal
+        from hexadecimal to decimal
 
     Suggested order for implementation:
         implement and test all of the getters (very easy)
@@ -59,7 +64,7 @@ The constructor takes three arguments of string data type:
    new_base: indicates that the conversion should be done to the new_base
              For example: new_base = '10' indicates that we would like to convert to new base 10
              Other methods of the class can access self.new_base instance variable
-
+    
              Note: you can ignore the debug parameter for now.
 
     Let us consider the instantiation of object obj1 from our Nums class:
@@ -85,7 +90,7 @@ The constructor takes three arguments of string data type:
     Create the objects from your class and as you implement your methods
     test them to see if they work correctly. 
 
-    Your code shuld be able to make of the following conversions:
+    Your code should be able to make of the following conversions:
         from binary to decimal
         from octal to decimal
         from hexadecimal to decimal
@@ -95,7 +100,7 @@ The constructor takes three arguments of string data type:
         
 
 [ Submit ]
-    Due on Sep 29th, end of the day.
+    Due on Sep 30th, end of the day.
     You can use our cs260-fl22 Repl.it teams for education, look for project named cs260-A1 on repl.it
     Place your finished python code in your CS260 GitHub repository, preferably under Programming/CS260-A1 sub directory structure
 

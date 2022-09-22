@@ -1,9 +1,6 @@
 """
     cs260-fl22-a1 programming assignment
-    Name:
-
-    Note: Do not modify the constructor method.
-         -20 points penalty if you do
+    Name: <your name>
 """
 
 from string import hexdigits
@@ -11,7 +8,7 @@ from string import hexdigits
 class Nums:
     def __init__(self, num = None, base = None,
                  new_base = None, debug = False):
-        """Constructor for our Nums class, do not modify!"""
+        """Constructor for our Nums class, do not modify this method!"""
 
         if not isinstance(num, str):
             raise TypeError('The num must be a given as str.')
@@ -44,14 +41,20 @@ class Nums:
         self.base = base
         self.new_base = new_base
         self.debug = debug
-        self.hex_dict = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, 
-                         '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
-                         'a': 10, 'b': 11, 'c': 12, 'd': 13,
-                         'e': 14, 'f': 15}
+        # lookup_table1 can be used with your weighted_sum implementation 
+        self.lookup_table1 = {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4,
+                              '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
+                              'a': 10, 'b': 11, 'c': 12, 'd': 13,
+                              'e': 14, 'f': 15} 
+        # lookup_table2 can be used with your repeated_division implementation 
+        self.lookup_table2 = {0: '0', 1: '1', 2: '2', 3: '3', 4: '4',
+                              5: '5', 6: '6', 7: '7', 8: '8', 9: '9',
+                              10: 'a', 11: 'b', 12: 'c', 13: 'd',
+                              14: 'e', 15: 'f'}
         '''
-        Note: The above definition of hex_dict is equivalent to the following:
-        self.hex_dict = {x:hexdigits[:16].index(x) for x in hexdigits[:16]}
-
+        Note: The above definitions of lookup tables is equivalent to the following:
+        self.lookup_table1 = {x:hexdigits[:16].index(x) for x in hexdigits[:16]}
+        self.lookup_table2 = {hexdigits[:16].index(x):x for x in hexdigits[:16]}
         '''
 
         print(self.__class__.__name__, 'object created.',
@@ -77,6 +80,7 @@ class Nums:
         The final answer is the collection of all of the remainders
         such that first remainder is the Least Significant Digit (LSD), and the
         last remainder that was obtained is the Most Significant Digit (MSD)
+        Note: you can use lookup_table2 with your implementation.
         """
         pass
 
@@ -90,6 +94,7 @@ class Nums:
             Σ(d_i * base^(n-i))  where n = len(num) - 1, 0<= i <= n
 
         If the number is already decimal returns the number unchanged.
+        Note: you can use lookup_table1 with your implementation.
         """
         pass
 
@@ -131,20 +136,17 @@ if __name__ == '__main__':
     base = '2'
     new_base = '10'
     obj1 = Nums(num = '1011', base = '2', new_base = '10')
-
     ''' 
-    To do:
         Make sure to implement and test all of your your methods.
         Any method that currently has pass keyword in the body should
         be implemented and tested.
 
-        Your code should be able to make of the following conversions:
-            from decimal to binary
-            from decimal to octal
-            from decimal to hexadecimal
-            from binary to decimal
-            from octal to decimal
-            from hexadecimal to decimal
+        For example: 
+            after you finish implementation of get_number() method
+            make sure to test it by calling it after instantiation of
+            the obj1:
+            print('get_number() ',  obj1.get_number())
+
     '''
  
     

@@ -18,12 +18,13 @@ that includes all of the following following methods:
     
     
     Your finished implementation of the Nums class will allow you to convert:
-        from decimal to binary
-        from decimal to octal
-        from decimal to hexadecimal
         from binary to decimal
         from octal to decimal
         from hexadecimal to decimal
+        from decimal to binary
+        from decimal to octal
+        from decimal to hexadecimal
+        
 
     Suggested order for implementation:
         implement and test all of the getters (very easy)
@@ -88,15 +89,7 @@ The constructor takes three arguments of string data type:
 [ Testing ]     
     Make sure to test all of your your methods!
     Create the objects from your class and as you implement your methods
-    test them to see if they work correctly. 
-
-    Your code should be able to make of the following conversions:
-        from binary to decimal
-        from octal to decimal
-        from hexadecimal to decimal
-        from decimal to binary
-        from decimal to octal
-        from decimal to hexadecimal
+    test them to see if they work correctly.
         
 
 [ Submit ]

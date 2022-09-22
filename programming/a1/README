@@ -1,7 +1,7 @@
 cs260-fl22-a1 programming assignment
 
 [ To do ]
-See the starter code: 
+The starter code is provided here: 
 https://github.com/bfilin/fl22data/blob/main/programming/a1/cs260_fl22_a1.py
 
 In this assignment you will finish the implementation of the Python Nums class 
@@ -17,64 +17,67 @@ that includes all of the following following methods:
     __repr__()  
     
     
-    This class will allow you to convert to/from:
+    The finished Nums class will allow you to convert to/from:
         decimal/binary, decimal/octal and decimal/hexadecimal
+
+    Suggested order for implementation:
+        implement and test all of the getters (very easy)
+        implement and test all of the setters (very easy)
+        implement and test weighted_sum()    
+        implement and test repeated_division()
+        implement and test __repr__() method
+
+        finally implement and test number_converter():
+            it decides which method should be called:
+                weighted_sum()
+                repeated_division()
+
+
 
     Note(s): 
         * Description of each method can be found in the method docstring.
    
-        * Do not modify the constructor method, -20 points penalty.
+        * The constructor has already been implemented for you. Do ***not*** modify 
+          the constructor method, -20 points penalty!
     
         * The input parameter values and output values for the methods of our 
           Nums class should be of str class (strings), -10 point penalty will
           be applied if your methods return some other data types.
+          *** If you notice that your method is returning an interger m, simply 
+          return str(m) instead of m.
+         
 
 
 [ Additional Description ]
-Another reminder - do not modify the constructor!
 The constructor takes three arguments of string data type:
         num: number
              For example: num = '1011'
-             Other methods can access self.num
+             Other methods of the class can access self.num instance variable
        base: describes the current base of num
              For example: base = '2'
-             Other methods can access self.base
-   new_base: indicates that conversion should be done to the new_base
-             For example: new_base = '10'
-             Other methods can access self.new_base
+             Other methods of the class can access self.base instance variable
+   new_base: indicates that the conversion should be done to the new_base
+             For example: new_base = '10' indicates that we would like to convert to new base 10
+             Other methods of the class can access self.new_base instance variable
 
              Note: you can ignore the debug parameter for now.
 
-    This means:
-        If we create the object from Nums class with our example values:
+    Let us consider the instantiation of object obj1 from our Nums class:
+    We will use the above example values num = '1011', base = '2', new_base = '10':
         obj1 = Nums(num = '1011', base = '2', new_base = '10')
-        We are saying:
+        The above line implicitly calls the constructor of our Nums class and says:
             Please create an object from our Nums class such that:
-            * num is a binary number and we would like to convert it
-            to a new decimal base. 
+            * num is a binary number
+            * and we would like to convert it to a new decimal base. 
 
-            * However the conversion should only take place if we call
-            the appropriate method that does conversion to decimal.
+        However the actual conversion takes place only after we call
+        the appropriate method that does conversion:
 
         Again let us take a look at our example obj1. 
         If you have implemented weighted_sum method correctly:
-            calling obj1.weighted_sum() we expect '11' to be returned
+            calling obj1.weighted_sum() we expect the decimal number '11' to be returned
         If you have implemented number_converter() method correctly:
-            calling obj1.number_converter() expect '11' to be returned
-
-
-[ Suggested order for implementation ]
-    implement and test all of the getters (very easy)
-    implement and test all of the setters (very easy)
-    implement and test weighted_sum()    
-    implement and test repeated_division()
-    implement and test __repr__() method
-
-    finally implement and test number_converter():
-        it decides which method should be called:
-            weighted_sum()
-            repeated_division()
-
+            calling obj1.number_converter() expect the decimal number '11' to be returned
 
 
 [ Testing ]     
@@ -83,13 +86,13 @@ The constructor takes three arguments of string data type:
     test them to see if they work correctly. 
 
     Your code shuld be able to make of the following conversions:
-        from decimal to binary
-        from decimal to octal
-        from decimal to hexadecimal
         from binary to decimal
         from octal to decimal
         from hexadecimal to decimal
-
+        from decimal to binary
+        from decimal to octal
+        from decimal to hexadecimal
+        
 
 [ Submit ]
     Due on Sep 29th, end of the day.

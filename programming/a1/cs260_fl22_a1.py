@@ -170,9 +170,9 @@ if __name__ == '__main__':
     obj1 = Nums(num, base, new_base)
     print('get_number() ',  obj1.get_number())
     '''
-    write your tests for other methods in here
+    write your tests for other methods above this multiline comment
     
-    Some sample tests:
+    Examples for possible test cases:
     # convert binary base 2 number 1011 to decimal base 10
     obj1 = Nums(num = '1011', base = '2', new_base = '10') 
     obj1.weighted_sum() --> '11'      # returns decimal number 11

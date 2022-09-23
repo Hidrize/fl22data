@@ -56,7 +56,7 @@ class Nums:
                              + '"2", "8", "10" or "16"')
 
         if not all([emt in hexdigits[:int(base)] for emt in num.lower()]):
-            raise ValueError('Invalid digits in num found. Valid digits for', 
+            raise ValueError('Invalid digits in num found. Valid digits for base', 
                              base,'are', hexdigits[:int(base)])
 
         # instance variables

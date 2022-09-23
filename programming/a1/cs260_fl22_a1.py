@@ -94,7 +94,7 @@ class Nums:
         pass
 
     def repeated_division(self):
-        """Converts the decimal number num to a new_base representation.
+        """Converts the decimal number self.num to a self.new_base representation.
 
         The repeated division algorithm divides the decimal number by new_base, 
         after each division the remainder is recorded in a collection(e.g. str)
@@ -108,7 +108,7 @@ class Nums:
         pass
 
     def weighted_sum(self):
-        """Converts the number num to a decimal representation.
+        """Converts the number self.num to a decimal representation.
 
         The weighted sum algorithm converts number that is given
         in either octal, binary or hexadecimal to a decimal representation. 

@@ -12,7 +12,20 @@ from string import hexdigits
 class Nums:
     def __init__(self, num = None, base = None,
                  new_base = None, debug = False):
-        """Constructor for our Nums class, do not modify this method!"""
+        """Constructor for our Nums class, do not modify this method!
+
+        Parameters:
+             num -- number, e.g. '1011' 
+                    (default None, expected to be a string)
+
+            base -- describes the current base of num, e.g. '2' 
+                    (default None, expected to be a string)
+
+        new_base -- describes the new desired base for num, e.g. '10'
+                    (default None, expecte to be a string)
+
+           debug -- not used in this implementation
+        """
 
         if not isinstance(num, str):
             raise TypeError('The num must be a given as str.')
@@ -135,22 +148,26 @@ class Nums:
         """Updates the new_base instance variable with parameter value."""
         pass
 
+
 if __name__ == '__main__':
+    """Guard the code from needless execution, if our file is use as module.
+
+    Make sure to test your implementation of your methods here.
+    For example:
+        After you finish implementation of get_number() method
+        make sure to test it by calling:
+        print('get_number() ',  obj1.get_number())
+    """
     num = '1011'
     base = '2'
     new_base = '10'
-    obj1 = Nums(num = '1011', base = '2', new_base = '10')
-    ''' 
-        Make sure to implement and test all of your your methods.
-        Any method that currently has pass keyword in the body should
-        be implemented and tested.
-
-        For example: 
-            after you finish implementation of get_number() method
-            make sure to test it by calling it after instantiation of
-            the obj1:
-            print('get_number() ',  obj1.get_number())
+    obj1 = Nums(num, base, new_base)
+    obj1.set_number('100','8')
+    print('get_number() ',  obj1.get_number())
+    print('weighted_sum() ',  obj1.weighted_sum())
+    # write your tests for other methods in here
 
     '''
- 
-    
+       '''
+
+

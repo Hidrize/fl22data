@@ -2,6 +2,15 @@
     cs260-fl22-a1 programming assignment
     Name: <your name>
 
+The starter code is provided here and is already include below:
+https://github.com/bfilin/fl22data/blob/main/programming/a1/cs260_fl22_a1.py
+
+Video overview for assignment a1:
+https://youtu.be/VDSD0UWL1RA
+
+Video pushing from Repl to GitHub:
+https://youtu.be/CM0ria1Kf7Q
+
 """
 
 from string import hexdigits
@@ -156,10 +165,49 @@ if __name__ == '__main__':
         print('get_number() ',  obj1.get_number())
     """
     num = '1011'
-    base = '2'
+    base = '2' # 0 1
     new_base = '10'
     obj1 = Nums(num, base, new_base)
     print('get_number() ',  obj1.get_number())
-    # write your tests for other methods in here
-    # print('weighted_sum() ',  obj1.weighted_sum())
+    '''
+    write your tests for other methods in here
+    
+    Some sample tests:
+    # convert binary base 2 number 1011 to decimal base 10
+    obj1 = Nums(num = '1011', base = '2', new_base = '10') 
+    obj1.weighted_sum() --> '11'      # returns decimal number 11
+    obj1.number_converter() --> '11'  # returns decimal number 11
+    obj1.repeated_division() --> None # returns None, since we are converting from bin->dec
 
+    # convert octal base 8 number 1011 to decimal base 10
+    obj2 = Nums(num = '1011', base = '8', new_base = '10') 
+    obj2.weighted_sum() --> '521'     # returns decimal number 521
+    obj2.number_converter() --> '521' # returns decimal number 521
+    obj2.repeated_division() --> None # returns None, since we are converting from oct->dec
+
+    # convert hexadecimal base 16 number 1011 to decimal base 10
+    obj3 = Nums(num = '1011', base = '16', new_base = '10') 
+    obj3.weighted_sum() --> '4113'    # returns decimal number 4113
+    obj3.number_converter() --> '4113'# returns decimal number 4113
+    obj3.repeated_division() --> None # returns None, since we are converting from hex->dec
+
+    # convert base 10 number 244 to binary base 2
+    obj4 = Nums(num = '244', base = '10', new_base = '2') 
+    obj4.repeated_division() --> '11110100' # returns binary number 11110100
+    obj4.number_converter() --> '11110100'  # returns binary number 11110100
+    obj4.weighted_sum() --> None            # returns None, since we are converting from dec->bin
+
+    # convert base 10 number 244 to octal base 8
+    obj5 = Nums(num = '244', base = '10', new_base = '8') 
+    obj5.repeated_division() --> '364' # returns octal number 364
+    obj5.number_converter() --> '364'  # returns octal number 364
+    obj5.weighted_sum() --> None       # returns None, since we are converting from dec->oct
+
+    # convert base 10 number 244 to hexadecimal base 16
+    obj6 = Nums(num = '244', base = '10', new_base = '16') 
+    obj6.repeated_division() --> 'f4'  # returns hexadecimal number f4
+    obj6.number_converter() --> 'f4'   # returns hexadecimal number f4
+    obj6.weighted_sum() --> None       # returns None, since we are converting from dec->hex
+
+    '''
+   

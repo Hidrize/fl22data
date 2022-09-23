@@ -1,6 +1,10 @@
 """
     cs260-fl22-a1 programming assignment
     Name: <your name>
+
+    The README file is provided here: 
+    https://github.com/bfilin/fl22data/blob/main/programming/a1/README
+
 """
 
 from string import hexdigits

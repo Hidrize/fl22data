@@ -2,9 +2,6 @@
     cs260-fl22-a1 programming assignment
     Name: <your name>
 
-    The README file is provided here: 
-    https://github.com/bfilin/fl22data/blob/main/programming/a1/README
-
 """
 
 from string import hexdigits
@@ -162,12 +159,7 @@ if __name__ == '__main__':
     base = '2'
     new_base = '10'
     obj1 = Nums(num, base, new_base)
-    obj1.set_number('100','8')
     print('get_number() ',  obj1.get_number())
-    print('weighted_sum() ',  obj1.weighted_sum())
     # write your tests for other methods in here
-
-    '''
-       '''
-
+    # print('weighted_sum() ',  obj1.weighted_sum())
 
